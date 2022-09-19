@@ -5,23 +5,25 @@
 You'll be working in `./packages/app`. The goal is to use mobx stores and display the data in a user interface.
 ## Data
 
-We'll be using https://mobx.js.org/, and [packages/app/data/asset-list.ts](packages/app/data/asset-list.ts) should be genesis state for a mobx store. 
+We'll be using https://mobx.js.org/, and [chain-registry](https://github.com/cosmology-tech/chain-registry), which will help us create the genesis state for a mobx store. 
+
+In this example, we'll be using the chain-regitsry's [Osmosis Asset list](https://github.com/cosmology-tech/chain-registry/tree/main/packages/osmosis#chain-registryosmosis)
 
 ### mobx `Asset` store methods
 
-* `addAsset(asset: ChainCoin)`
+* `addAsset(asset: Asset)`
 
 this should add an asset, e.g. `ATOM` or `OSMO` tokens
 
-* `updateAsset(asset: ChainCoin)`
+* `updateAsset(asset: Asset)`
 
 this should update an asset, `denom_units`, `base`, `logo_URIs`, etc.
 
-* `removeAsset(asset: ChainCoin)`
+* `removeAsset(asset: Asset)`
 
 ### mobx `Pool` store methods
 
-* `addPool(asset1: ChainCoin, asset2: ChainCoin)` 
+* `addPool(asset1: Asset, asset2: Asset)` 
 
 This should add a pool of two assets. 
 
