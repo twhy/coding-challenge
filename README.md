@@ -1,5 +1,10 @@
 # coding challenge
 
+## deliverables
+
+1. mobx `Asset` store
+2. mobx `Pool` store
+3. UI to add data (optional)
 ## instructions
 
 You'll be working in `./packages/app`. The goal is to use mobx stores and display the data in a user interface.
