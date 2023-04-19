@@ -23,6 +23,7 @@
     "@babel/cli": "7.17.6",
     "@babel/core": "7.17.5",
     "@babel/eslint-parser": "^7.5.4",
+    "@jest/globals": "^29.5.0",
     "@pyramation/babel-preset-env": "0.1.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^24.9.0",

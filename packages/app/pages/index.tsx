@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from "react";
-
+import React from "react";
 import Pools from '../components/pools-list';
+import { asset_list } from '@chain-registry/osmosis';
+import { AssetStore, PoolStore } from "../stores";
 
 export default function Index() {
   return (<>
-    <Pools />
+    <Pools store={new PoolStore(new AssetStore(asset_list.assets))} />
   </>
   );
 }
