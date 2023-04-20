@@ -10,10 +10,10 @@ export default class AssetStore {
   }
 
   getRandom(exclude?: Asset) {
-    if (this.assets.length === 0) { return undefined }
+    if (this.assets.length === 0) { return null }
     if (exclude) {
       const assets = this.assets.filter(asset => asset.symbol !== exclude.symbol)
-      return assets.length > 0 ? assets[Math.floor(Math.random() * assets.length)] : undefined
+      return assets.length > 0 ? assets[Math.floor(Math.random() * assets.length)] : null
     }
     return this.assets[Math.floor(Math.random() * this.assets.length)]
   }

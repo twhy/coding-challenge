@@ -41,7 +41,7 @@ describe('AssetStore', () => {
 
   test('getRandom() - no assets', () => {
     const store = new AssetStore();
-    expect(store.getRandom()).toBeUndefined();
+    expect(store.getRandom()).toBeNull();
   })
 
   test('getRandom()', () => {
